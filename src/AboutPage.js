@@ -14,17 +14,6 @@ export default class AboutPage extends Component {
     this.decrementCounter = this.decrementCounter.bind(this)
   }
 
-  render() {
-    return (
-      <div>
-        <h2>About</h2>
-        <p>{this.state.counter}</p>
-        <button onClick={this.incrementCounter}>+</button>
-        <button onClick={this.decrementCounter}>-</button>
-      </div>
-    )
-  }
-
   incrementCounter() {
     let { counter } = this.state
     counter++
@@ -41,5 +30,16 @@ export default class AboutPage extends Component {
     this.setState({
       counter
     })
+  }
+
+  render() {
+    return (
+      <div>
+        <h2>{this.props.message}</h2>
+        <p>{this.state.counter}</p>
+        <button onClick={this.incrementCounter}>+</button>
+        <button onClick={this.decrementCounter}>-</button>
+      </div>
+    )
   }
 }

@@ -13,8 +13,7 @@ export default class HomePage extends Component {
     console.log("Home: In render")
     return (
       <div>
-        <h2>Home</h2>
-        <p>{this.props.message}</p>
+        <h2>{this.props.message}</h2>
       </div>
     )
   }
