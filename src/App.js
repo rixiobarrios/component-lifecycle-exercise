@@ -30,16 +30,20 @@ export default class App extends Component {
   }
   render() {
     let Page
+    let pageTitle
 
     switch (this.state.page) {
       case 'home':
         Page = HomePage
+        pageTitle = "Home"
         break;
       case 'about':
         Page = AboutPage
+        pageTitle = "About"
         break;
       default:
         Page = ErrorPage
+        pageTitle = "Error"
         break;
     }
     
@@ -53,7 +57,7 @@ export default class App extends Component {
           </nav>
         </header>
         <main>
-          <Page></Page>
+          <Page message={pageTitle}></Page>
         </main>
       </div>
     )
