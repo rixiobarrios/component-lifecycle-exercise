@@ -15,8 +15,7 @@ First, add the mounting lifecycle methods to the `HomePage` component. The mount
 
 Second, add the updating lifecycle methods to the `AboutPage` component. The updating lifecycle methods are:
 
-* `constructor()`
+* `shouldComponentUpdate()`
 * `render()`
-* `componentDidMount()`
-* `componentWillUnmount()`
+* `componentDidUpdate()`
 
