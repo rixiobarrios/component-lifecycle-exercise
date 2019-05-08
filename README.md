@@ -11,6 +11,8 @@ First, add the mounting lifecycle methods to the `HomePage` component. The mount
 * `componentDidMount()`
 * `componentWillUnmount()`
 
+In each method, console log the name of the component and the name of the method being called.
+
 ## Updating Lifecycle Methods
 
 Second, add the updating lifecycle methods to the `AboutPage` component. The updating lifecycle methods are:
@@ -19,3 +21,9 @@ Second, add the updating lifecycle methods to the `AboutPage` component. The upd
 * `render()`
 * `componentDidUpdate()`
 
+In each method, console log the name of the component and the name of the method being called.
+
+
+## Observing!
+
+Once all the methods are added, click the `+` and `-` buttons and watch what happens in your console!
