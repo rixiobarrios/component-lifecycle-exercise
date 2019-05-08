@@ -2,6 +2,13 @@
 
 This is a short exercise for exploring React's component lifecycle methods.
 
+## Setup
+
+* Clone this repo
+* `cd` into the cloned directory
+* `npm install`
+* `npm start`
+
 ## Mounting Lifecycle Methods
 
 First, add the mounting lifecycle methods to the `HomePage` component. The mounting lifecycle methods are:
