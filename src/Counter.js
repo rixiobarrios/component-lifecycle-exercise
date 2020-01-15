@@ -1,36 +1,32 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 // Update this component to use the Updating Component Lifecycle methods
 
-export default class AboutPage extends Component {
+class Counter extends Component {
   constructor() {
-    super()
-
+    super();
     this.state = {
       counter: 0
-    }
-
-    this.incrementCounter = this.incrementCounter.bind(this)
-    this.decrementCounter = this.decrementCounter.bind(this)
+    };
   }
 
-  incrementCounter() {
-    let { counter } = this.state
-    counter++
+  incrementCounter = () => {
+    let { counter } = this.state;
+    counter++;
 
     this.setState({
       counter
-    })
-  }
+    });
+  };
 
-  decrementCounter() {
-    let { counter } = this.state
-    counter--
+  decrementCounter = () => {
+    let { counter } = this.state;
+    counter--;
 
     this.setState({
       counter
-    })
-  }
+    });
+  };
 
   render() {
     return (
@@ -40,6 +36,8 @@ export default class AboutPage extends Component {
         <button onClick={this.incrementCounter}>+</button>
         <button onClick={this.decrementCounter}>-</button>
       </div>
-    )
+    );
   }
 }
+
+export default Counter;

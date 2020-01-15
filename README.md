@@ -2,17 +2,18 @@
 
 This is a short exercise for exploring React's component lifecycle methods.
 
-## Setup
+## Instructions
 
-- Clone this repo
-- `cd` into the cloned directory
-- `npm install`
-- `npm start`
+1. Fork and clone this repository into your sandbox directory.
+1. Change into the new directory with `cd component-lifecycle-methods`.
+1. Install dependencies by typing `npm install`.
+1. Open the directory in VS Code with `code .`.
+1. Back in the Terminal, type `npm run start` to run your development server.
 
 ## Mounting Lifecycle Methods
 
-First, add the mounting lifecycle methods to the `HomePage` component. The
-mounting lifecycle methods are:
+First, add the mounting lifecycle methods to the `Home` component. The mounting
+lifecycle methods are:
 
 - `constructor()`
 - `render()`
@@ -20,11 +21,11 @@ mounting lifecycle methods are:
 - `componentWillUnmount()`
 
 In each method, console log the name of the component and the name of the method
-being called.
+being called, such as: `console.log('Home: constructor');`.
 
 ## Updating Lifecycle Methods
 
-Second, add the updating lifecycle methods to the `AboutPage` component. The
+Second, add the updating lifecycle methods to the `Counter` component. The
 updating lifecycle methods are:
 
 - `shouldComponentUpdate()`
@@ -32,7 +33,7 @@ updating lifecycle methods are:
 - `componentDidUpdate()`
 
 In each method, console log the name of the component and the name of the method
-being called.
+being called, such as: `console.log('Counter: componentDidUpdate');`.
 
 ## Observing!
 
