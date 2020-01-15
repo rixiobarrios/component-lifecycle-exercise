@@ -4,20 +4,14 @@
 
 body {
   margin: 0;
-  padding: 0;
   font-family: sans-serif;
 }
 
 header {
+  align-content: center;
   display: flex;
   flex-direction: row;
-  align-content: center;
   justify-content: space-between;
-}
-
-header h1 {
-  display: block;
-  margin: 1rem 0;
 }
 
 header nav a {
@@ -31,19 +25,11 @@ header nav a {
 }
 
 header nav a:hover {
-  background-color: #585555
+  background-color: #585555;
 }
 
 main {
   height: 100%;
-  /* flex: 1;  
-  display: flex;
-  justify-content: center;
-  align-content: center; */
-}
-
-main h2 {
-  display: block;
 }
 
 .page-container {
