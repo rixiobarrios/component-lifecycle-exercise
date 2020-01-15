@@ -5,9 +5,19 @@ import React, { Component } from 'react';
 class Home extends Component {
   constructor() {
     super();
+    console.log('Home: constructor');
+  }
+
+  componentDidMount() {
+    console.log('Home: componentDidMount');
+  }
+
+  componentWillUnmount() {
+    console.log('Home: componentWillUnmount');
   }
 
   render() {
+    console.log('Home: In render');
     return (
       <div>
         <h2>{this.props.message}</h2>
